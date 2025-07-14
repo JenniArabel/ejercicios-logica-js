@@ -17,7 +17,7 @@ minMax([1]) ➞ [1, 1]
 Notas: Todos los arrays de prueba tendrán al menos un elemento y son válidas.
 
 ## Ejercicio 3: Dígito más alto
-- Cree una función que tome un número como argumento y devuelva el dígito más alto de ese número.
+Cree una función que tome un número como argumento y devuelva el dígito más alto de ese número.
 
 ## Ejercicio 4: Ordenar números en orden descendente
 - Cree una función que tome cualquier número no negativo como argumento y lo devuelva con sus dígitos en orden descendente. El orden descendente es cuando ordenas de mayor a menor.
