@@ -9,7 +9,9 @@ function esCodigoPostalValido(codigoPostal) {
     if (codigoPostal[i] === '') {
       return false; 
     }
-    if (codigoPostal[i] < '0' || codigoPostal[i] > '9') {
+    //     if (codigoPostal[i] < '0' || codigoPostal[i] > '9') 
+    // Es redundante esta linea porque todo número de 1 cifra es menor a 9.
+    if (codigoPostal[i] < '0') {
       return false;
     }
   }
