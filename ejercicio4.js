@@ -8,12 +8,12 @@ function ordenNumsDesc(num) {
         for (let j = 0; j < numToSring.length - i - 1; j++) {
 
             //3ro: si el numero actual es menor que el siguiente, intercambiarlos
-            // (esto es lo que hace que los numeros se ordenen de mayor a menor)
+            // (esto  hace que los numeros se ordenen de mayor a menor)
             if (numToSring[j] < numToSring[j + 1]) {
                 // Intercambiar los numeros
-                let guardadoTemporalmente = numToSring[j];
+                let aux = numToSring[j];
                 numToSring[j] = numToSring[j + 1];
-                numToSring[j + 1] = guardadoTemporalmente;
+                numToSring[j + 1] = aux;
             }
         }
     }
