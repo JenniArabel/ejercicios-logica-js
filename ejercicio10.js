@@ -5,18 +5,35 @@ function calculadora(num1, operador, num2) {
   }
 
     // Verifica que el operador sea uno de los válidos
-  if (operador === "+") {
-    return num1 + num2;
-  } else if (operador === "-") {
-    return num1 - num2;
-  } else if (operador === "*") {
-    return num1 * num2;
-  } else if (operador === "/") {
-    // Verifica que no se intente dividir por cero
-    if (num2 === 0) return "Error: División por cero";
-    return num1 / num2;
-  } else {
-    return "Error: Operador inválido";
+  // if (operador === "+") {
+  //   return num1 + num2;
+  // } else if (operador === "-") {
+  //   return num1 - num2;
+  // } else if (operador === "*") {
+  //   return num1 * num2;
+  // } else if (operador === "/") {
+  //   // Verifica que no se intente dividir por cero
+  //   if (num2 === 0) return "Error: División por cero";
+  //   return num1 / num2;
+  // } else {
+  //   return "Error: Operador inválido";
+  // }
+
+  /* NO USAR MAS DE 3 IF --> USAR SIWTCH */
+
+  // Pasar a switch: 
+  switch (operador) {
+    case "+":
+      return num1 + num2;
+    case "-":
+      return num1 - num2;
+    case "*":
+      return num1 * num2;
+    case "/":
+      if (num2 === 0) return "Error: División por cero";
+      return num1 / num2;
+    default:
+      return "Error: Operador inválido";
   }
 }
 
